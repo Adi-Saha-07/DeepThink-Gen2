@@ -1,0 +1,62 @@
+[
+  {
+    "id": "rel_q1",
+    "text": "I find it easy to open up emotionally and be vulnerable with people I'm close to.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q2",
+    "text": "I sometimes worry that the people I care about will leave or lose interest in me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q3",
+    "text": "I value my independence highly and feel uncomfortable when others rely on me too much.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q4",
+    "text": "I trust my close friends and partner to be honest with me, even when it's hard to hear.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q5",
+    "text": "I tend to avoid conflict in my relationships, even if it means not expressing my true feelings.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q6",
+    "text": "I often need reassurance from loved ones that they still care about me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q7",
+    "text": "I feel comfortable depending on others and having others depend on me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q8",
+    "text": "When I'm hurt in a relationship, I tend to pull away rather than talk about it.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q9",
+    "text": "I believe most people have good intentions and won't deliberately hurt me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q10",
+    "text": "I actively work on communicating my needs clearly to the people I'm close to.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]

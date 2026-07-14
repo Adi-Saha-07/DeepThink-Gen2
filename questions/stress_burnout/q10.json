@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sb_q1",
+    "text": "I often feel like there aren't enough hours in the day to get everything done.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q2",
+    "text": "I find it difficult to fully disconnect from work or responsibilities during my free time.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q3",
+    "text": "I have healthy ways of dealing with stress, such as exercise, hobbies, or talking to someone.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q4",
+    "text": "I sometimes feel emotionally exhausted even after doing tasks that aren't physically demanding.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q5",
+    "text": "I feel a sense of accomplishment and purpose from my daily work or studies.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q6",
+    "text": "I have been feeling more cynical or detached from things I used to care about.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q7",
+    "text": "Physical symptoms like headaches, muscle tension, or stomach problems show up when I'm stressed.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q8",
+    "text": "I feel comfortable saying 'no' to extra responsibilities when my plate is already full.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q9",
+    "text": "I regularly take breaks and make time for activities that bring me joy.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q10",
+    "text": "I have been sleeping poorly or irregularly due to stress or overthinking.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]

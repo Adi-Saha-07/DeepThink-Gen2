@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover your personality traits with our AI-powered personality analyzer. Explore social style, emotional intelligence, Big Five traits, and more — privately and for free.">
-    <title>{% block title %}DeepThink — Personality Analyzer{% endblock %}</title>
+    <meta name="description" content="Discover your personality traits with a private AI-powered personality analyzer. Explore social style, emotional intelligence, Big Five traits, and more.">
+    <title>{% block title %}DeepThink - Personality Analyzer{% endblock %}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     {% block head %}{% endblock %}
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <a href="{{ url_for('index') }}" class="nav-logo">
-                <span class="logo-icon">🚀 </span>
+                <span class="logo-mark">DT</span>
                 <span class="logo-text">DeepThink</span>
             </a>
             <div class="nav-links">
@@ -26,16 +25,14 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="main-content" role="main">
         {% block content %}{% endblock %}
     </main>
 
-    <!-- Footer -->
     <footer class="footer" role="contentinfo">
         <div class="footer-container">
             <div class="footer-disclaimer">
-                <p>⚠️ <strong>Disclaimer:</strong> This tool is for self-reflection and entertainment purposes only.
+                <p><strong>Disclaimer:</strong> This tool is for self-reflection and entertainment purposes only.
                 It is <strong>not</strong> a medical or psychological diagnostic tool.
                 If you're struggling, please reach out to a licensed mental health professional.</p>
             </div>

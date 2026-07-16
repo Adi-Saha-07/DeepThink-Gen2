@@ -1,5 +1,6 @@
 import os
 import secrets
+
 from dotenv import load_dotenv
 
 load_dotenv(override=True)
@@ -11,9 +12,9 @@ class Config:
     SECRET_KEY = os.getenv("FLASK_SECRET_KEY", secrets.token_hex(32))
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
-    # Session config — memory-only, 30-minute lifetime
+    # Session config - memory-only, 30-minute lifetime
     SESSION_PERMANENT = False
-    PERMANENT_SESSION_LIFETIME = 1800  # 30 minutes in seconds
+    PERMANENT_SESSION_LIFETIME = 1800
 
     # Rate limiting
     RATE_LIMIT_MAX_REQUESTS = 10
@@ -23,50 +24,50 @@ class Config:
     CATEGORIES = {
         "social": {
             "name": "Social Personality",
-            "icon": "👥",
+            "icon": "SP",
             "description": "Introvert/extrovert tendencies, communication style, and social energy.",
-            "color": "#7C9FE8",
+            "color": "#3b82f6",
         },
         "mental_health": {
             "name": "Mental Wellbeing Screener",
-            "icon": "🧠",
+            "icon": "MW",
             "description": "Self-report indicators for mood and anxiety tendencies. Not a diagnosis.",
-            "color": "#A78BDA",
+            "color": "#8b5cf6",
         },
         "big_five": {
             "name": "Big Five (OCEAN)",
-            "icon": "🌊",
+            "icon": "BF",
             "description": "Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism.",
-            "color": "#6DB5A0",
+            "color": "#0f766e",
         },
         "emotional_intelligence": {
             "name": "Emotional Intelligence (EQ)",
-            "icon": "💡",
+            "icon": "EQ",
             "description": "Self-awareness, empathy, emotional regulation, and social skills.",
-            "color": "#E8A87C",
+            "color": "#d97706",
         },
         "stress_burnout": {
             "name": "Stress & Burnout Tendency",
-            "icon": "🔥",
+            "icon": "SB",
             "description": "Work-life balance, stress coping mechanisms, and burnout indicators.",
-            "color": "#D4799C",
+            "color": "#e11d48",
         },
         "career": {
             "name": "Work/Career Personality",
-            "icon": "💼",
+            "icon": "WK",
             "description": "Leadership style, teamwork vs. independent work, decision-making style.",
-            "color": "#7CAFC4",
+            "color": "#0891b2",
         },
         "relationship": {
             "name": "Relationship & Attachment Style",
-            "icon": "💜",
+            "icon": "RS",
             "description": "Attachment patterns, trust dynamics, and communication in relationships.",
-            "color": "#C49EC4",
+            "color": "#be185d",
         },
         "self_esteem": {
             "name": "Self-Esteem & Confidence",
-            "icon": "✨",
+            "icon": "SE",
             "description": "Self-worth, confidence level, inner critic, and personal resilience.",
-            "color": "#A0C4B8",
+            "color": "#16a34a",
         },
     }

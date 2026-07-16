@@ -1,4 +1,4 @@
-"""Personality Analyzer — Flask application."""
+"""Personality Analyzer - Flask application."""
 
 import json
 import os
@@ -31,7 +31,6 @@ app.config.from_object(Config)
 app.secret_key = Config.SECRET_KEY
 app.permanent_session_lifetime = timedelta(seconds=Config.PERMANENT_SESSION_LIFETIME)
 
-# ── In-memory rate limiter ──────────────────────────────────────────────────────
 rate_limit_store = defaultdict(list)
 
 
@@ -41,7 +40,6 @@ def is_rate_limited(ip):
     window = Config.RATE_LIMIT_WINDOW_SECONDS
     max_requests = Config.RATE_LIMIT_MAX_REQUESTS
 
-    # Clean old entries
     rate_limit_store[ip] = [t for t in rate_limit_store[ip] if now - t < window]
 
     if len(rate_limit_store[ip]) >= max_requests:
@@ -51,7 +49,6 @@ def is_rate_limited(ip):
     return False
 
 
-# ── Question loader ─────────────────────────────────────────────────────────────
 QUESTIONS_DIR = os.path.join(os.path.dirname(__file__), "questions")
 
 
@@ -62,9 +59,6 @@ def load_questions(category, count=10):
         with open(filepath, "r", encoding="utf-8") as f:
             return json.load(f)
     return []
-
-
-# ── Routes ──────────────────────────────────────────────────────────────────────
 
 
 @app.route("/")
@@ -109,7 +103,7 @@ def select_types():
 
 @app.route("/test")
 def test():
-    """Test-taking page — JS-driven single-page experience."""
+    """Test-taking page - JS-driven single-page experience."""
     selected = session.get("selected_types", [])
     if not selected:
         return redirect(url_for("select_types"))
@@ -133,7 +127,7 @@ def api_questions():
             {
                 "category": cat,
                 "category_name": cat_info.get("name", cat),
-                "category_icon": cat_info.get("icon", "📋"),
+                "category_icon": cat_info.get("icon", "DT"),
                 "questions": questions,
             }
         )
@@ -144,7 +138,6 @@ def api_questions():
 @app.route("/api/submit", methods=["POST"])
 def api_submit():
     """Receive all answers, call Gemini API, return analysis HTML."""
-    # Rate limiting
     client_ip = request.remote_addr
     if is_rate_limited(client_ip):
         return (
@@ -168,19 +161,16 @@ def api_submit():
     selected_types = session_data["selected_types"]
     demographics = session_data["demographics"]
 
-    # Build questions map {id: text} for prompt context
     questions_map = {}
     for cat in selected_types:
         questions = load_questions(cat)
         for q in questions:
             questions_map[q["id"]] = q["text"]
 
-    # Generate analysis via Gemini
     result_html = generate_analysis(
         demographics, selected_types, answers, questions_map
     )
 
-    # Store result in session for the result page
     session["result"] = result_html
     session.modified = True
 
@@ -197,7 +187,6 @@ def result():
     selected_types = session.get("selected_types", [])
     demographics = session.get("demographics", {})
 
-    # Clear session data after rendering
     clear_session(session)
     session.modified = True
 
@@ -215,8 +204,6 @@ def privacy():
     """Privacy policy page."""
     return render_template("privacy.html")
 
-
-# ── Main ────────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)

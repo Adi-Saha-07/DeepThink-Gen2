@@ -1,9 +1,5 @@
-/* ============================================================
-   DeepThink — Main JavaScript
-   Hero rotation, test engine, loading states, PDF download
-   ============================================================ */
+/* DeepThink - Main JavaScript */
 
-// ── Hero Message Rotation ──────────────────────────────────────
 (function initHeroRotation() {
     const messages = document.querySelectorAll('.hero-message');
     if (messages.length === 0) return;
@@ -13,41 +9,33 @@
         messages[currentIndex].classList.remove('active');
         currentIndex = (currentIndex + 1) % messages.length;
         messages[currentIndex].classList.add('active');
-    }, 4000);
+    }, 4200);
 })();
 
-
-// ── Test Engine ────────────────────────────────────────────────
-// Only runs on the test page
 if (document.getElementById('test-page')) {
     initTestEngine();
 }
 
-// State
-let allQuestionSets = [];      // Array of { category, category_name, category_icon, questions[] }
-let flatQuestions = [];         // Flat list of all questions across categories
+let allQuestionSets = [];
+let flatQuestions = [];
 let currentQuestionIndex = 0;
-let answers = {};              // { question_id: selected_option_text }
-let currentCategoryIndex = 0;
+let answers = {};
 let totalQuestions = 0;
 let showingTransition = false;
-
-// Encouragement messages
-const encouragements = [
-    "Nice, one step closer! 🌟",
-    "You're doing great — keep going. 💪",
-    "Honest answers make the best insights. ✨",
-    "Almost there — stay with it! 🎯",
-    "Every answer counts. You've got this! 🌈",
-    "Self-discovery in progress... 🔮",
-    "Keep going, you're on a roll! 🚀",
-    "Halfway there — stay honest with yourself. 💜",
-    "Your answers are painting a picture. 🎨",
-    "One question at a time. You're doing amazing. 🌻"
-];
-
-// Loading messages rotation
 let loadingMsgInterval = null;
+
+const encouragements = [
+    "Nice, one step closer.",
+    "You're doing great - keep going.",
+    "Honest answers make the best insights.",
+    "Almost there - stay with it.",
+    "Every answer counts. You've got this.",
+    "Self-discovery in progress...",
+    "Keep going, you're on a roll.",
+    "Halfway there - stay honest with yourself.",
+    "Your answers are painting a clearer picture.",
+    "One question at a time. You're doing great."
+];
 
 async function initTestEngine() {
     try {
@@ -60,8 +48,8 @@ async function initTestEngine() {
         }
 
         allQuestionSets = data.question_sets;
+        flatQuestions = [];
 
-        // Build flat question list with category metadata
         allQuestionSets.forEach((set, setIndex) => {
             set.questions.forEach((q, qIndex) => {
                 flatQuestions.push({
@@ -84,7 +72,6 @@ async function initTestEngine() {
     }
 }
 
-
 function renderQuestion() {
     if (currentQuestionIndex >= totalQuestions) {
         submitTest();
@@ -93,7 +80,6 @@ function renderQuestion() {
 
     const q = flatQuestions[currentQuestionIndex];
 
-    // Check if we need a category transition
     if (q.isFirstInSet && q.setIndex > 0 && !showingTransition) {
         showCategoryTransition(q);
         return;
@@ -101,24 +87,19 @@ function renderQuestion() {
 
     showingTransition = false;
 
-    // Update progress
-    const progress = ((currentQuestionIndex) / totalQuestions) * 100;
+    const progress = (currentQuestionIndex / totalQuestions) * 100;
     document.getElementById('progress-fill').style.width = progress + '%';
     document.getElementById('progress-text').textContent =
         `Question ${currentQuestionIndex + 1} of ${totalQuestions}`;
 
-    // Update category badge
     document.getElementById('badge-icon').textContent = q.category_icon;
     document.getElementById('badge-text').textContent = q.category_name;
-
-    // Update question text
     document.getElementById('question-text').textContent = q.text;
 
-    // Render options
     const optionsList = document.getElementById('options-list');
     optionsList.innerHTML = '';
 
-    q.options.forEach((opt, i) => {
+    q.options.forEach((opt) => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
         btn.textContent = opt;
@@ -141,34 +122,27 @@ function renderQuestion() {
         optionsList.appendChild(btn);
     });
 
-    // Back button
     const backBtn = document.getElementById('back-btn');
     backBtn.disabled = currentQuestionIndex === 0;
 
-    // Counter
     document.getElementById('question-counter').textContent =
         `${q.indexInSet + 1}/${allQuestionSets[q.setIndex].questions.length} in ${q.category_name}`;
 
-    // Hide encouragement
     document.getElementById('encouragement').classList.add('hidden');
 
-    // Re-trigger card animation
     const card = document.getElementById('question-card');
     card.style.animation = 'none';
-    card.offsetHeight; // trigger reflow
+    card.offsetHeight;
     card.style.animation = 'fadeInUp 0.4s var(--ease-out) both';
 
-    // Show question container, hide others
     document.getElementById('question-container').classList.remove('hidden');
     document.getElementById('category-transition').classList.add('hidden');
     document.getElementById('loading-container').classList.add('hidden');
 }
 
-
 function selectOption(questionId, optionText) {
     answers[questionId] = optionText;
 
-    // Visual feedback — mark selected
     const buttons = document.querySelectorAll('.option-btn');
     buttons.forEach(btn => {
         btn.classList.remove('selected');
@@ -179,16 +153,13 @@ function selectOption(questionId, optionText) {
         }
     });
 
-    // Show encouragement
     showEncouragement();
 
-    // Auto-advance after a brief delay
     setTimeout(() => {
         currentQuestionIndex++;
         renderQuestion();
-    }, 600);
+    }, 450);
 }
-
 
 function showEncouragement() {
     const el = document.getElementById('encouragement');
@@ -201,15 +172,12 @@ function showEncouragement() {
     el.style.animation = 'fadeIn 0.4s var(--ease-out)';
 }
 
-
 function showCategoryTransition(q) {
     showingTransition = true;
-
-    // Get the previous category name for the "Great job" message
     const prevSet = allQuestionSets[q.setIndex - 1];
 
     document.getElementById('transition-icon').textContent = q.category_icon;
-    document.getElementById('transition-title').textContent = `Great job on ${prevSet.category_name}!`;
+    document.getElementById('transition-title').textContent = `Great job on ${prevSet.category_name}`;
     document.getElementById('transition-subtitle').textContent = `Next up: ${q.category_name} questions`;
 
     document.getElementById('question-container').classList.add('hidden');
@@ -217,12 +185,10 @@ function showCategoryTransition(q) {
     document.getElementById('loading-container').classList.add('hidden');
 }
 
-
 function continueToNextCategory() {
     showingTransition = false;
     renderQuestion();
 }
-
 
 function goBack() {
     if (currentQuestionIndex > 0) {
@@ -232,18 +198,13 @@ function goBack() {
     }
 }
 
-
 async function submitTest() {
-    // Show loading state
     document.getElementById('question-container').classList.add('hidden');
     document.getElementById('category-transition').classList.add('hidden');
     document.getElementById('loading-container').classList.remove('hidden');
     document.getElementById('progress-container').classList.add('hidden');
-
-    // Update progress bar to 100%
     document.getElementById('progress-fill').style.width = '100%';
 
-    // Rotate loading messages
     startLoadingMessages();
 
     try {
@@ -271,7 +232,6 @@ async function submitTest() {
     }
 }
 
-
 function startLoadingMessages() {
     const messages = document.querySelectorAll('.loading-msg');
     if (messages.length === 0) return;
@@ -281,9 +241,8 @@ function startLoadingMessages() {
         messages[idx].classList.remove('active');
         idx = (idx + 1) % messages.length;
         messages[idx].classList.add('active');
-    }, 3000);
+    }, 2800);
 }
-
 
 function stopLoadingMessages() {
     if (loadingMsgInterval) {
@@ -292,9 +251,10 @@ function stopLoadingMessages() {
     }
 }
 
-
-// ── Intersection Observer for fade-in animations ───────────────
 (function initScrollAnimations() {
+    const animated = document.querySelectorAll('.feature-card, .step, .privacy-section');
+    if (animated.length === 0 || !('IntersectionObserver' in window)) return;
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -304,7 +264,5 @@ function stopLoadingMessages() {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.feature-card, .step, .privacy-section').forEach(el => {
-        observer.observe(el);
-    });
+    animated.forEach(el => observer.observe(el));
 })();

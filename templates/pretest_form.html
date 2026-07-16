@@ -1,38 +1,38 @@
 {% extends "base.html" %}
 
-{% block title %}DeepThink — Tell Us About Yourself{% endblock %}
+{% block title %}DeepThink - Tell Us About Yourself{% endblock %}
 
 {% block content %}
 <section class="form-page fade-in">
     <div class="container container-narrow">
         <div class="form-header">
+            <div class="eyebrow">Optional context</div>
             <h1>Before We Begin</h1>
-            <p class="form-subtitle">A little context helps us personalize your analysis.
-            <strong>Everything is optional</strong> — skip anything you'd rather not share.</p>
+            <p class="form-subtitle">A little context helps personalize your analysis.
+            <strong>Everything is optional</strong> - skip anything you'd rather not share.</p>
         </div>
 
         <form method="POST" action="{{ url_for('pretest') }}" class="pretest-form" id="pretest-form">
-            <!-- Age Range -->
             <div class="form-group">
                 <label class="form-label" for="age_range">
-                    <span class="label-icon">🎂</span> Age Range
+                    <span class="label-icon">01</span> Age Range
                 </label>
                 <div class="radio-group" role="radiogroup" aria-label="Age range">
                     <label class="radio-card">
                         <input type="radio" name="age_range" value="13-17">
-                        <span class="radio-display">13–17</span>
+                        <span class="radio-display">13-17</span>
                     </label>
                     <label class="radio-card">
                         <input type="radio" name="age_range" value="18-24">
-                        <span class="radio-display">18–24</span>
+                        <span class="radio-display">18-24</span>
                     </label>
                     <label class="radio-card">
                         <input type="radio" name="age_range" value="25-34">
-                        <span class="radio-display">25–34</span>
+                        <span class="radio-display">25-34</span>
                     </label>
                     <label class="radio-card">
                         <input type="radio" name="age_range" value="35-44">
-                        <span class="radio-display">35–44</span>
+                        <span class="radio-display">35-44</span>
                     </label>
                     <label class="radio-card">
                         <input type="radio" name="age_range" value="45+">
@@ -45,10 +45,9 @@
                 </div>
             </div>
 
-            <!-- Gender -->
             <div class="form-group">
                 <label class="form-label" for="gender">
-                    <span class="label-icon">👤</span> Gender
+                    <span class="label-icon">02</span> Gender
                 </label>
                 <div class="radio-group" role="radiogroup" aria-label="Gender">
                     <label class="radio-card">
@@ -70,10 +69,9 @@
                 </div>
             </div>
 
-            <!-- Occupation -->
             <div class="form-group">
                 <label class="form-label" for="occupation">
-                    <span class="label-icon">💼</span> Occupation Status
+                    <span class="label-icon">03</span> Occupation Status
                 </label>
                 <div class="radio-group" role="radiogroup" aria-label="Occupation status">
                     <label class="radio-card">
@@ -105,7 +103,7 @@
 
             <button type="submit" class="btn btn-primary btn-large btn-full">
                 Continue
-                <span class="btn-arrow">→</span>
+                <span class="btn-arrow">-></span>
             </button>
         </form>
     </div>

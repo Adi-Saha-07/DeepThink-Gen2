@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}DeepThink — Your Personality Report{% endblock %}
+{% block title %}DeepThink - Your Personality Report{% endblock %}
 
 {% block head %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -9,32 +9,28 @@
 {% block content %}
 <section class="result-page fade-in" id="result-page">
     <div class="container">
-        <!-- Result Header -->
         <div class="result-header">
-            <div class="result-badge">🎉 Your Personality Report</div>
+            <div class="result-badge">Your Personality Report</div>
             <h1 class="result-title">Here's What We Found</h1>
             <p class="result-intro">Based on your answers, our AI has crafted a personalized analysis.
-            Remember — this is for self-reflection, not diagnosis.</p>
+            Remember - this is for self-reflection, not diagnosis.</p>
         </div>
 
-        <!-- Result Content (rendered from Gemini) -->
         <div class="result-content" id="result-content">
             {{ result_html | safe }}
         </div>
 
-        <!-- Actions -->
         <div class="result-actions">
             <button class="btn btn-primary" id="download-pdf-btn" onclick="downloadPDF()">
-                📄 Download as PDF
+                Download as PDF
             </button>
             <a href="{{ url_for('pretest') }}" class="btn btn-secondary">
-                🔄 Take Again
+                Take Again
             </a>
         </div>
 
-        <!-- Retake Message -->
         <div class="retake-message">
-            <p>💡 Your traits can shift over time — feel free to retake anytime for fresh insights!</p>
+            <p>Your traits can shift over time - feel free to retake anytime for fresh insights.</p>
         </div>
     </div>
 </section>
@@ -46,7 +42,7 @@
     function downloadPDF() {
         const element = document.getElementById('result-content');
         const btn = document.getElementById('download-pdf-btn');
-        btn.textContent = '⏳ Generating PDF...';
+        btn.textContent = 'Generating PDF...';
         btn.disabled = true;
 
         const opt = {
@@ -58,10 +54,10 @@
         };
 
         html2pdf().set(opt).from(element).save().then(() => {
-            btn.textContent = '📄 Download as PDF';
+            btn.textContent = 'Download as PDF';
             btn.disabled = false;
         }).catch(() => {
-            btn.textContent = '📄 Download as PDF';
+            btn.textContent = 'Download as PDF';
             btn.disabled = false;
         });
     }

@@ -1342,3 +1342,244 @@ a:hover {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* ═══════════════════════════════════════════════
+   RESULT PAGE – ANIMATED ENHANCEMENTS
+═══════════════════════════════════════════════ */
+
+/* Floating particles background */
+.result-particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+@keyframes floatDot {
+    0%   { transform: translateY(0) scale(1); opacity: var(--dot-op, 0.15); }
+    50%  { transform: translateY(-28px) scale(1.25); opacity: calc(var(--dot-op, 0.15) * 1.6); }
+    100% { transform: translateY(0) scale(1); opacity: var(--dot-op, 0.15); }
+}
+
+.rp-dot {
+    position: absolute;
+    border-radius: 50%;
+    animation: floatDot var(--dur, 8s) ease-in-out infinite;
+    animation-delay: var(--delay, 0s);
+    --dot-op: 0.15;
+}
+
+/* Animated header */
+.result-header-animated {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes titleReveal {
+    from { opacity: 0; transform: translateY(28px) skewY(-1.5deg); filter: blur(4px); }
+    to   { opacity: 1; transform: translateY(0) skewY(0); filter: blur(0); }
+}
+
+.result-title-reveal {
+    animation: titleReveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both;
+    background: linear-gradient(135deg, var(--text) 40%, var(--primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.result-intro-reveal {
+    animation: fadeInUp 0.7s var(--ease-out) 0.35s both;
+}
+
+/* Pulsing badge */
+@keyframes badgePulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(15, 118, 110, 0.35); }
+    50%       { box-shadow: 0 0 0 8px rgba(15, 118, 110, 0); }
+}
+
+.result-badge-pulse {
+    animation: badgePulse 2.8s ease-in-out infinite;
+    animation-delay: 0.6s;
+    position: relative;
+}
+
+.badge-glow-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary);
+    margin-right: 6px;
+    vertical-align: middle;
+    position: relative;
+    animation: badgePulse 1.8s ease-in-out infinite;
+}
+
+/* Content container z-index */
+.result-content-animated {
+    position: relative;
+    z-index: 1;
+}
+
+/* Category cards – enhanced hover */
+.result-content .result-category {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.28s ease;
+}
+
+.result-content .result-category::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(circle at 60% 0%, rgba(15, 118, 110, 0.06) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+.result-content .result-category:hover {
+    transform: translateY(-4px) scale(1.005);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+/* Animated underline on h2 */
+.result-content .result-category h2 {
+    position: relative;
+    background-image: linear-gradient(var(--primary), var(--primary));
+    background-repeat: no-repeat;
+    background-position: left bottom 0;
+    background-size: 0% 3px;
+    padding-bottom: 12px;
+    border-bottom: none;
+    margin-bottom: 14px;
+}
+
+.result-content .result-category h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+}
+
+/* Trait chips – enhanced */
+.result-content .trait-chip {
+    cursor: default;
+    transition:
+        background 0.2s ease,
+        transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.result-content .trait-chip::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.result-content .trait-chip:hover {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+    transform: translateY(-2px) scale(1.06);
+    box-shadow: 0 4px 12px rgba(15, 118, 110, 0.25);
+}
+
+.result-content .trait-chip:hover::before {
+    opacity: 1;
+}
+
+/* Closing section glow */
+.result-content .result-closing {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(15, 118, 110, 0.22);
+}
+
+.result-content .result-closing::before {
+    content: '✨';
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    font-size: 1.5rem;
+    opacity: 0.45;
+    animation: floatDot 4s ease-in-out infinite;
+}
+
+/* Actions reveal */
+.result-actions-reveal {
+    animation: fadeInUp 0.65s var(--ease-out) 0.5s both;
+    position: relative;
+    z-index: 1;
+}
+
+/* PDF button icon */
+.btn-icon {
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+.spin-icon {
+    animation: spin 0.9s linear infinite;
+}
+
+/* Section divider accent inside category card */
+.result-content .result-category h2 {
+    color: var(--primary-dark);
+    letter-spacing: -0.01em;
+}
+
+/* Summary italic styling */
+.result-content .result-summary {
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: var(--text-soft);
+    border-left: 3px solid var(--primary-soft);
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+/* Result category number accent */
+.result-content .result-category:nth-child(1) { --card-hue: #0f766e; }
+.result-content .result-category:nth-child(2) { --card-hue: #8b5cf6; }
+.result-content .result-category:nth-child(3) { --card-hue: #d97706; }
+.result-content .result-category:nth-child(4) { --card-hue: #e11d48; }
+.result-content .result-category:nth-child(5) { --card-hue: #0891b2; }
+.result-content .result-category:nth-child(6) { --card-hue: #be185d; }
+.result-content .result-category:nth-child(7) { --card-hue: #16a34a; }
+.result-content .result-category:nth-child(8) { --card-hue: #7c3aed; }
+
+.result-content .result-category::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--card-hue, var(--primary));
+    border-radius: var(--radius) 0 0 var(--radius);
+}
+
+/* Distress banner pulse */
+@keyframes distressBorderPulse {
+    0%, 100% { border-color: #f3cf90; }
+    50%       { border-color: #d97706; }
+}
+
+.result-content .distress-banner {
+    animation: distressBorderPulse 2.5s ease-in-out infinite;
+    border-left: 4px solid #d97706;
+}
+

@@ -8,7 +8,7 @@
         <div class="form-header">
             <div class="eyebrow">Build your assessment</div>
             <h1>What Would You Like to Explore?</h1>
-            <p class="form-subtitle">Select one or more personality dimensions. You can combine as many as you like.</p>
+            <p class="form-subtitle">Select one personality dimension to explore.</p>
         </div>
 
         {% if error %}
@@ -19,7 +19,7 @@
             <div class="category-grid">
                 {% for key, cat in categories.items() %}
                 <label class="category-card" style="--card-accent: {{ cat.color }};" id="card-{{ key }}">
-                    <input type="checkbox" name="categories" value="{{ key }}" class="category-checkbox">
+                    <input type="radio" name="categories" value="{{ key }}" class="category-checkbox">
                     <div class="category-card-inner">
                         <span class="category-icon">{{ cat.icon }}</span>
                         <h3 class="category-name">{{ cat.name }}</h3>

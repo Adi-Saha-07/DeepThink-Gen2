@@ -3,25 +3,32 @@
 {% block title %}DeepThink - Your Personality Report{% endblock %}
 
 {% block head %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 {% endblock %}
 
 {% block content %}
+<div class="result-particles" id="result-particles" aria-hidden="true"></div>
+
 <section class="result-page fade-in" id="result-page">
     <div class="container">
-        <div class="result-header">
-            <div class="result-badge">Your Personality Report</div>
-            <h1 class="result-title">Here's What We Found</h1>
-            <p class="result-intro">Based on your answers, our AI has crafted a personalized analysis.
-            Remember - this is for self-reflection, not diagnosis.</p>
+
+        <div class="result-header result-header-animated">
+            <div class="result-badge result-badge-pulse">
+                <span class="badge-glow-dot"></span>
+                Your Personality Report
+            </div>
+            <h1 class="result-title result-title-reveal">Here's What We Found</h1>
+            <p class="result-intro result-intro-reveal">Based on your thoughtful answers, our AI has crafted a personalized analysis just for you. Every insight below is unique to how you responded.</p>
         </div>
 
-        <div class="result-content" id="result-content">
+        <div class="result-content result-content-animated" id="result-content">
             {{ result_html | safe }}
         </div>
 
-        <div class="result-actions">
-            <button class="btn btn-primary" id="download-pdf-btn" onclick="downloadPDF()">
+        <div class="result-actions result-actions-reveal">
+            <button class="btn btn-primary btn-pdf" id="download-pdf-btn" onclick="downloadPDF()">
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
                 Download as PDF
             </button>
             <a href="{{ url_for('pretest') }}" class="btn btn-secondary">
@@ -30,36 +37,262 @@
         </div>
 
         <div class="retake-message">
-            <p>Your traits can shift over time - feel free to retake anytime for fresh insights.</p>
+            <p>Your traits can shift over time — feel free to retake anytime for fresh insights.</p>
         </div>
     </div>
 </section>
+
+<!-- Hidden PDF-ready clone for clean export -->
+<div id="pdf-source" style="display:none;" aria-hidden="true"></div>
 
 {% endblock %}
 
 {% block scripts %}
 <script>
-    function downloadPDF() {
-        const element = document.getElementById('result-content');
-        const btn = document.getElementById('download-pdf-btn');
-        btn.textContent = 'Generating PDF...';
-        btn.disabled = true;
-
-        const opt = {
-            margin:       [0.5, 0.5, 0.5, 0.5],
-            filename:     'DeepThink-Personality-Report.pdf',
-            image:        { type: 'jpeg', quality: 0.98 },
-            html2canvas:  { scale: 2, useCORS: true },
-            jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
-        };
-
-        html2pdf().set(opt).from(element).save().then(() => {
-            btn.textContent = 'Download as PDF';
-            btn.disabled = false;
-        }).catch(() => {
-            btn.textContent = 'Download as PDF';
-            btn.disabled = false;
-        });
+/* ── Floating Particles ── */
+(function spawnParticles() {
+    const container = document.getElementById('result-particles');
+    if (!container) return;
+    const colours = ['#0f766e','#d97706','#8b5cf6','#e11d48','#0891b2','#16a34a'];
+    for (let i = 0; i < 22; i++) {
+        const p = document.createElement('span');
+        p.className = 'rp-dot';
+        p.style.cssText = `
+            left:${Math.random()*100}%;
+            top:${Math.random()*100}%;
+            width:${4 + Math.random()*8}px;
+            height:${4 + Math.random()*8}px;
+            background:${colours[Math.floor(Math.random()*colours.length)]};
+            animation-delay:${Math.random()*6}s;
+            animation-duration:${6 + Math.random()*8}s;
+            opacity:${0.12 + Math.random()*0.18};
+        `;
+        container.appendChild(p);
     }
+})();
+
+/* ── Staggered card animations ── */
+(function animateCards() {
+    const categories = document.querySelectorAll('.result-content .result-category');
+    categories.forEach((card, i) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(40px)';
+        card.style.transition = 'none';
+        setTimeout(() => {
+            card.style.transition = 'opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1)';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+            animateChipsInCard(card, i);
+            animateH2(card);
+        }, 300 + i * 220);
+    });
+
+    const closing = document.querySelector('.result-content .result-closing');
+    if (closing) {
+        closing.style.opacity = '0';
+        closing.style.transform = 'translateY(30px)';
+        setTimeout(() => {
+            closing.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            closing.style.opacity = '1';
+            closing.style.transform = 'translateY(0)';
+        }, 300 + categories.length * 220 + 200);
+    }
+
+    const distress = document.querySelector('.result-content .distress-banner');
+    if (distress) {
+        distress.style.opacity = '0';
+        setTimeout(() => {
+            distress.style.transition = 'opacity 0.6s ease';
+            distress.style.opacity = '1';
+        }, 300 + categories.length * 220 + 400);
+    }
+})();
+
+function animateChipsInCard(card, cardIndex) {
+    const chips = card.querySelectorAll('.trait-chip');
+    chips.forEach((chip, j) => {
+        chip.style.opacity = '0';
+        chip.style.transform = 'scale(0.7) translateY(10px)';
+        chip.style.transition = 'none';
+        setTimeout(() => {
+            chip.style.transition = 'opacity 0.4s cubic-bezier(0.34,1.56,0.64,1), transform 0.4s cubic-bezier(0.34,1.56,0.64,1)';
+            chip.style.opacity = '1';
+            chip.style.transform = 'scale(1) translateY(0)';
+        }, 500 + cardIndex * 220 + j * 90);
+    });
+}
+
+function animateH2(card) {
+    const h2 = card.querySelector('h2');
+    if (!h2) return;
+    h2.style.backgroundSize = '0% 3px';
+    setTimeout(() => {
+        h2.style.transition = 'background-size 0.7s ease';
+        h2.style.backgroundSize = '100% 3px';
+    }, 400);
+}
+
+/* ── PDF Download ── */
+async function downloadPDF() {
+    const btn = document.getElementById('download-pdf-btn');
+    btn.innerHTML = `<svg class="btn-icon spin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 12a9 9 0 11-6.219-8.56"/></svg> Generating...`;
+    btn.disabled = true;
+
+    try {
+        const { jsPDF } = window.jspdf;
+        const source = document.getElementById('result-content');
+
+        // Clone content for clean render
+        const clone = source.cloneNode(true);
+        clone.style.cssText = `
+            position:fixed; left:-9999px; top:0;
+            width:750px; padding:24px;
+            background:#ffffff; font-family:Arial,sans-serif;
+            font-size:13px; line-height:1.6; color:#1f2326;
+        `;
+
+        // Reset animations on clone
+        clone.querySelectorAll('*').forEach(el => {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+            el.style.animation = 'none';
+            el.style.transition = 'none';
+        });
+
+        // Style category blocks
+        clone.querySelectorAll('.result-category').forEach(cat => {
+            cat.style.cssText = `
+                border:1px solid #ddd; border-radius:8px; padding:20px;
+                margin-bottom:18px; background:#ffffff; page-break-inside:avoid;
+            `;
+        });
+
+        // Style headings
+        clone.querySelectorAll('h2').forEach(h => {
+            h.style.cssText = `font-size:17px; font-weight:700; color:#115e59;
+                border-bottom:2px solid #0f766e; padding-bottom:8px; margin-bottom:12px;
+                font-family:Arial,sans-serif; background:none;`;
+        });
+
+        // Style summaries
+        clone.querySelectorAll('.result-summary').forEach(s => {
+            s.style.cssText = `font-style:italic; color:#5f6768; margin-bottom:12px; font-size:13px;`;
+        });
+
+        // Style trait chips
+        clone.querySelectorAll('.result-traits').forEach(t => {
+            t.style.cssText = `display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px;`;
+        });
+        clone.querySelectorAll('.trait-chip').forEach(chip => {
+            chip.style.cssText = `
+                display:inline-block; padding:4px 10px; border-radius:4px;
+                background:#e3f2ee; color:#115e59; font-size:11px;
+                font-weight:700; border:1px solid #badbd6;
+            `;
+        });
+
+        // Style closing + distress
+        clone.querySelectorAll('.result-closing').forEach(el => {
+            el.style.cssText = `background:#e3f2ee; color:#115e59; padding:18px; border-radius:8px; margin-top:12px;`;
+        });
+        clone.querySelectorAll('.distress-banner').forEach(el => {
+            el.style.cssText = `background:#fff3d8; color:#754404; padding:16px; border-radius:8px;
+                border:1px solid #f3cf90; margin-top:12px;`;
+        });
+
+        // Style regular paragraphs
+        clone.querySelectorAll('p').forEach(p => {
+            if (!p.closest('.result-summary') && !p.closest('.result-closing') && !p.closest('.distress-banner')) {
+                p.style.cssText = `color:#1f2326; font-size:13px; line-height:1.65; margin-bottom:8px;`;
+            }
+        });
+
+        document.body.appendChild(clone);
+
+        const canvas = await html2canvas(clone, {
+            scale: 2,
+            useCORS: true,
+            backgroundColor: '#ffffff',
+            logging: false,
+            windowWidth: 800
+        });
+
+        document.body.removeChild(clone);
+
+        const pdf = new jsPDF({ unit: 'pt', format: 'a4', orientation: 'portrait' });
+        const pageW = pdf.internal.pageSize.getWidth();
+        const pageH = pdf.internal.pageSize.getHeight();
+        const margin = 28;
+        const contentW = pageW - margin * 2;
+
+        // Add header bar
+        pdf.setFillColor(15, 118, 110);
+        pdf.rect(0, 0, pageW, 50, 'F');
+        pdf.setTextColor(255, 255, 255);
+        pdf.setFont('helvetica', 'bold');
+        pdf.setFontSize(20);
+        pdf.text('DeepThink – Personality Report', margin, 33);
+
+        // Add date
+        pdf.setFontSize(9);
+        pdf.setFont('helvetica', 'normal');
+        const dateStr = new Date().toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+        pdf.text(dateStr, pageW - margin, 33, { align: 'right' });
+
+        // Render canvas as image across pages
+        const imgData = canvas.toDataURL('image/jpeg', 0.95);
+        const imgW = contentW;
+        const imgH = (canvas.height * imgW) / canvas.width;
+
+        let yPos = 60;
+        let remainingH = imgH;
+        let srcY = 0;
+
+        while (remainingH > 0) {
+            const sliceH = Math.min(remainingH, pageH - yPos - margin);
+            const srcSliceH = (sliceH / imgH) * canvas.height;
+
+            // Create a cropped canvas slice
+            const sliceCanvas = document.createElement('canvas');
+            sliceCanvas.width = canvas.width;
+            sliceCanvas.height = srcSliceH;
+            const ctx = sliceCanvas.getContext('2d');
+            ctx.drawImage(canvas, 0, srcY, canvas.width, srcSliceH, 0, 0, canvas.width, srcSliceH);
+
+            const sliceData = sliceCanvas.toDataURL('image/jpeg', 0.95);
+            pdf.addImage(sliceData, 'JPEG', margin, yPos, imgW, sliceH);
+
+            remainingH -= sliceH;
+            srcY += srcSliceH;
+
+            if (remainingH > 0) {
+                pdf.addPage();
+                // Header on subsequent pages
+                pdf.setFillColor(15, 118, 110);
+                pdf.rect(0, 0, pageW, 36, 'F');
+                pdf.setTextColor(255, 255, 255);
+                pdf.setFont('helvetica', 'bold');
+                pdf.setFontSize(13);
+                pdf.text('DeepThink – Personality Report (continued)', margin, 24);
+                yPos = 46;
+            }
+        }
+
+        // Footer on last page
+        pdf.setTextColor(150, 150, 150);
+        pdf.setFont('helvetica', 'normal');
+        pdf.setFontSize(8);
+        pdf.text('DeepThink | For self-reflection purposes only. Not a medical or psychological diagnostic tool.', pageW / 2, pageH - 12, { align: 'center' });
+
+        pdf.save('DeepThink-Personality-Report.pdf');
+
+    } catch (err) {
+        console.error('PDF error:', err);
+        alert('Could not generate PDF. Please try again.');
+    }
+
+    btn.innerHTML = `<svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/></svg> Download as PDF`;
+    btn.disabled = false;
+}
 </script>
 {% endblock %}

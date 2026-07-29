@@ -281,12 +281,19 @@ a:hover {
 }
 
 .hero-grid {
-    width: min(1120px, calc(100% - 40px));
+    width: min(1240px, calc(100% - 32px));
     margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(0, 0.88fr) minmax(460px, 1.12fr);
-    gap: 48px;
+    gap: 40px;
     align-items: center;
+}
+
+.privacy-banner .container,
+.features .container,
+.how-it-works .container,
+.disclaimer-section .container {
+    width: min(1240px, calc(100% - 32px));
 }
 
 .hero-content {

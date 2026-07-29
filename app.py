@@ -86,16 +86,16 @@ def pretest():
 
 @app.route("/select-types", methods=["GET", "POST"])
 def select_types():
-    """Multi-select personality test categories."""
+    """Select one personality test category."""
     if request.method == "POST":
-        selected = request.form.getlist("categories")
+        selected = request.form.get("categories")
         if not selected:
             return render_template(
                 "select_types.html",
                 categories=Config.CATEGORIES,
-                error="Please select at least one category.",
+                error="Please select one category.",
             )
-        save_selected_types(session, selected)
+        save_selected_types(session, [selected])
         session.modified = True
         return redirect(url_for("test"))
     return render_template("select_types.html", categories=Config.CATEGORIES)

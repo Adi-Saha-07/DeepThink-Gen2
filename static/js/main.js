@@ -16,6 +16,10 @@ if (document.getElementById('test-page')) {
     initTestEngine();
 }
 
+if (document.getElementById('category-form')) {
+    initCategorySelectionGuide();
+}
+
 let allQuestionSets = [];
 let flatQuestions = [];
 let currentQuestionIndex = 0;
@@ -249,6 +253,36 @@ function stopLoadingMessages() {
         clearInterval(loadingMsgInterval);
         loadingMsgInterval = null;
     }
+}
+
+function initCategorySelectionGuide() {
+    const categoryInputs = document.querySelectorAll('.category-checkbox');
+    const countSection = document.querySelector('.question-count-section');
+    const countOptions = document.querySelectorAll('.count-option:not(.disabled)');
+    const beginButton = document.getElementById('begin-test-btn');
+
+    const scrollToElement = (el) => {
+        if (!el) return;
+        window.setTimeout(() => {
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 120);
+    };
+
+    categoryInputs.forEach(input => {
+        input.addEventListener('change', () => {
+            if (input.checked) {
+                scrollToElement(countSection);
+            }
+        });
+    });
+
+    countOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            countOptions.forEach(item => item.classList.remove('active'));
+            option.classList.add('active');
+            scrollToElement(beginButton);
+        });
+    });
 }
 
 (function initScrollAnimations() {

@@ -26,7 +26,7 @@ from utils.session_manager import (
     save_selected_types,
 )
 
-app = Flask(__name__, static_folder="public/static", static_url_path="/static")
+app = Flask(__name__)
 app.config.from_object(Config)
 app.secret_key = Config.SECRET_KEY
 app.permanent_session_lifetime = timedelta(seconds=Config.PERMANENT_SESSION_LIFETIME)

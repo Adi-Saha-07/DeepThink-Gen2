@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+venv/
+.venv/
+.codex_deps/
+.vercel/
+.agents/
+.codex/
+*.egg-info/
+dist/
+build/
+.idea/
+.vscode/

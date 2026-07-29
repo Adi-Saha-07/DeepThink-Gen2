@@ -1,0 +1,10 @@
+.env
+venv/
+.venv/
+.codex_deps/
+__pycache__/
+*.pyc
+.git/
+.agents/
+.codex/
+CONTEXT.md

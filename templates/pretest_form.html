@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}DeepThink - Tell Us About Yourself{% endblock %}
+
+{% block content %}
+<section class="form-page fade-in">
+    <div class="container container-narrow">
+        <div class="form-header">
+            <div class="eyebrow">Optional context</div>
+            <h1>Before We Begin</h1>
+            <p class="form-subtitle">A little context helps personalize your analysis.
+            <strong>Everything is optional</strong> - skip anything you'd rather not share.</p>
+        </div>
+
+        <form method="POST" action="{{ url_for('pretest') }}" class="pretest-form" id="pretest-form">
+            <div class="form-group">
+                <label class="form-label" for="age_range">
+                    <span class="label-icon">01</span> Age Range
+                </label>
+                <div class="radio-group" role="radiogroup" aria-label="Age range">
+                    <label class="radio-card">
+                        <input type="radio" name="age_range" value="13-17">
+                        <span class="radio-display">13-17</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="age_range" value="18-24">
+                        <span class="radio-display">18-24</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="age_range" value="25-34">
+                        <span class="radio-display">25-34</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="age_range" value="35-44">
+                        <span class="radio-display">35-44</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="age_range" value="45+">
+                        <span class="radio-display">45+</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="age_range" value="Prefer not to say" checked>
+                        <span class="radio-display">Skip</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="gender">
+                    <span class="label-icon">02</span> Gender
+                </label>
+                <div class="radio-group" role="radiogroup" aria-label="Gender">
+                    <label class="radio-card">
+                        <input type="radio" name="gender" value="Male">
+                        <span class="radio-display">Male</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="gender" value="Female">
+                        <span class="radio-display">Female</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="gender" value="Non-binary">
+                        <span class="radio-display">Non-binary</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="gender" value="Prefer not to say" checked>
+                        <span class="radio-display">Skip</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="occupation">
+                    <span class="label-icon">03</span> Occupation Status
+                </label>
+                <div class="radio-group" role="radiogroup" aria-label="Occupation status">
+                    <label class="radio-card">
+                        <input type="radio" name="occupation" value="Student">
+                        <span class="radio-display">Student</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="occupation" value="Employed">
+                        <span class="radio-display">Employed</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="occupation" value="Self-employed">
+                        <span class="radio-display">Self-employed</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="occupation" value="Unemployed">
+                        <span class="radio-display">Unemployed</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="occupation" value="Other">
+                        <span class="radio-display">Other</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="occupation" value="Prefer not to say" checked>
+                        <span class="radio-display">Skip</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-large btn-full">
+                Continue
+                <span class="btn-arrow">-></span>
+            </button>
+        </form>
+    </div>
+</section>
+{% endblock %}

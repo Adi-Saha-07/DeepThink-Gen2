@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}DeepThink - Your Personality Report{% endblock %}
+
+{% block head %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="result-page fade-in" id="result-page">
+    <div class="container">
+        <div class="result-header">
+            <div class="result-badge">Your Personality Report</div>
+            <h1 class="result-title">Here's What We Found</h1>
+            <p class="result-intro">Based on your answers, our AI has crafted a personalized analysis.
+            Remember - this is for self-reflection, not diagnosis.</p>
+        </div>
+
+        <div class="result-content" id="result-content">
+            {{ result_html | safe }}
+        </div>
+
+        <div class="result-actions">
+            <button class="btn btn-primary" id="download-pdf-btn" onclick="downloadPDF()">
+                Download as PDF
+            </button>
+            <a href="{{ url_for('pretest') }}" class="btn btn-secondary">
+                Take Again
+            </a>
+        </div>
+
+        <div class="retake-message">
+            <p>Your traits can shift over time - feel free to retake anytime for fresh insights.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function downloadPDF() {
+        const element = document.getElementById('result-content');
+        const btn = document.getElementById('download-pdf-btn');
+        btn.textContent = 'Generating PDF...';
+        btn.disabled = true;
+
+        const opt = {
+            margin:       [0.5, 0.5, 0.5, 0.5],
+            filename:     'DeepThink-Personality-Report.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2, useCORS: true },
+            jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+        };
+
+        html2pdf().set(opt).from(element).save().then(() => {
+            btn.textContent = 'Download as PDF';
+            btn.disabled = false;
+        }).catch(() => {
+            btn.textContent = 'Download as PDF';
+            btn.disabled = false;
+        });
+    }
+</script>
+{% endblock %}

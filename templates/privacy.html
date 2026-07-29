@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}DeepThink - Privacy Policy{% endblock %}
+
+{% block content %}
+<section class="form-page fade-in">
+    <div class="container container-narrow">
+        <div class="form-header">
+            <div class="eyebrow">Data handling</div>
+            <h1>Privacy Policy</h1>
+            <p class="form-subtitle">Your privacy is our top priority. Here's exactly how we handle your data: we don't keep any of it.</p>
+        </div>
+
+        <div class="privacy-content">
+            <div class="privacy-section">
+                <h2>No Data Storage</h2>
+                <p>DeepThink does <strong>not</strong> use a database, file storage, or any persistent storage mechanism.
+                Your answers, demographic selections, and personality results exist only in temporary server memory
+                during your active session, and are permanently deleted the moment your result is displayed.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>No User Accounts</h2>
+                <p>We do not require or support user accounts, login, signup, email collection, or any form of
+                personal identification. You are completely anonymous.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>No Tracking Cookies</h2>
+                <p>We do not use tracking cookies, analytics pixels, or any third-party tracking services.
+                The only cookie used is a standard Flask session cookie that contains a random identifier
+                (no personal data) and expires when you close your browser or after 30 minutes of inactivity.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>AI Processing</h2>
+                <p>Your answers are sent to the Google Gemini API for analysis. This is a one-time API call
+                that generates your personality report. We do not store the request or response beyond what's
+                needed to display your result. Google's own data handling policies apply to the API call itself;
+                we recommend reviewing
+                <a href="https://ai.google.dev/terms" target="_blank" rel="noopener">Google's AI Terms of Service</a>
+                if you have concerns about AI processing.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Session Lifecycle</h2>
+                <ul>
+                    <li>Session data is created when you start a test</li>
+                    <li>It lives only in server memory (RAM), never written to disk</li>
+                    <li>It is <strong>permanently cleared</strong> after your result is shown</li>
+                    <li>It automatically expires after 30 minutes of inactivity</li>
+                    <li>Closing your browser tab also effectively ends your session</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>What We Collect</h2>
+                <p><strong>Nothing permanently.</strong> During your session, the following is held temporarily in memory:</p>
+                <ul>
+                    <li>Age range (optional, e.g., "18-24")</li>
+                    <li>Gender (optional, e.g., "Female")</li>
+                    <li>Occupation status (optional, e.g., "Student")</li>
+                    <li>Selected personality categories</li>
+                    <li>Your question answers</li>
+                </ul>
+                <p>None of this is linked to your identity, IP address, or any other identifier. After your result is shown, all of it is gone.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Not a Diagnostic Tool</h2>
+                <p>DeepThink is for <strong>self-reflection and entertainment only</strong>. It is not a medical,
+                psychological, or clinical diagnostic tool. If you are experiencing mental health difficulties,
+                please reach out to a licensed mental health professional.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2>Contact</h2>
+                <p>If you have any privacy concerns, feel free to review our source code. This is a fully
+                transparent, open-source application with no hidden data collection.</p>
+            </div>
+        </div>
+
+        <div class="privacy-cta">
+            <a href="{{ url_for('index') }}" class="btn btn-primary">
+                <- Back to Home
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}DeepThink - Choose Your Categories{% endblock %}
+
+{% block content %}
+<section class="form-page fade-in">
+    <div class="container">
+        <div class="form-header">
+            <div class="eyebrow">Build your assessment</div>
+            <h1>What Would You Like to Explore?</h1>
+            <p class="form-subtitle">Select one personality dimension to explore.</p>
+        </div>
+
+        {% if error %}
+        <div class="error-banner">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST" action="{{ url_for('select_types') }}" class="category-form" id="category-form">
+            <div class="category-grid">
+                {% for key, cat in categories.items() %}
+                <label class="category-card" style="--card-accent: {{ cat.color }};" id="card-{{ key }}">
+                    <input type="radio" name="categories" value="{{ key }}" class="category-checkbox">
+                    <div class="category-card-inner">
+                        <span class="category-icon">{{ cat.icon }}</span>
+                        <h3 class="category-name">{{ cat.name }}</h3>
+                        <p class="category-desc">{{ cat.description }}</p>
+                        <div class="category-check">OK</div>
+                    </div>
+                </label>
+                {% endfor %}
+            </div>
+
+            <div class="question-count-section">
+                <h3 class="count-title">Questions Per Category</h3>
+                <div class="count-options">
+                    <label class="count-option active">
+                        <input type="radio" name="question_count" value="10" checked>
+                        <span class="count-display">
+                            <span class="count-number">10</span>
+                            <span class="count-label">Questions</span>
+                            <span class="count-badge available">Available</span>
+                        </span>
+                    </label>
+                    <label class="count-option disabled">
+                        <input type="radio" name="question_count" value="20" disabled>
+                        <span class="count-display">
+                            <span class="count-number">20</span>
+                            <span class="count-label">Questions</span>
+                            <span class="count-badge coming-soon">Coming Soon</span>
+                        </span>
+                    </label>
+                    <label class="count-option disabled">
+                        <input type="radio" name="question_count" value="30" disabled>
+                        <span class="count-display">
+                            <span class="count-number">30</span>
+                            <span class="count-label">Questions</span>
+                            <span class="count-badge coming-soon">Coming Soon</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-large btn-full" id="begin-test-btn">
+                Begin Test
+                <span class="btn-arrow">-></span>
+            </button>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "career_q1",
+    "text": "I naturally take charge in group projects and enjoy guiding others toward a goal.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q2",
+    "text": "I prefer working independently and having full control over my own tasks.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q3",
+    "text": "I make decisions quickly based on my gut feeling rather than overanalyzing every detail.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q4",
+    "text": "I thrive in environments where every day looks different and there's always something new.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q5",
+    "text": "I value job stability and a predictable routine more than excitement or novelty.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q6",
+    "text": "I am motivated primarily by the impact of my work rather than financial rewards.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q7",
+    "text": "I enjoy mentoring or teaching others and sharing my knowledge.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q8",
+    "text": "I handle constructive criticism at work well and use it to improve.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q9",
+    "text": "I prefer roles where I can be creative rather than follow strict procedures.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q10",
+    "text": "I feel comfortable speaking up in meetings and advocating for my ideas.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q11",
+    "text": "I set ambitious long-term career goals and regularly track my progress toward them.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q12",
+    "text": "I find it easy to network and build professional relationships.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q13",
+    "text": "I feel energized when I solve complex problems or tackle intellectual challenges at work.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q14",
+    "text": "I struggle to maintain work-life balance and often find work spilling into personal time.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q15",
+    "text": "I am comfortable with taking calculated risks to advance my career.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q16",
+    "text": "Recognition and praise from others are important motivators for my performance.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q17",
+    "text": "I actively seek out opportunities to learn new skills relevant to my career.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q18",
+    "text": "I would consider starting my own business or freelancing over traditional employment.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q19",
+    "text": "I feel a strong sense of purpose and meaning in the work I currently do.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q20",
+    "text": "I find it easy to prioritize tasks and manage my time effectively at work.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q21",
+    "text": "I feel anxious or stressed when a deadline is approaching.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q22",
+    "text": "I would rather have a smaller salary doing work I love than a higher salary doing work I dislike.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q23",
+    "text": "I feel confident presenting my work to a large audience.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q24",
+    "text": "I adapt well when my company or organization goes through major changes.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q25",
+    "text": "I often feel that my talents and skills are underutilized in my current role.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q26",
+    "text": "I enjoy collaborative brainstorming sessions where everyone contributes ideas.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q27",
+    "text": "I am comfortable asking for help or advice from colleagues when I'm stuck.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q28",
+    "text": "I take ownership of my mistakes at work rather than blaming external circumstances.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q29",
+    "text": "I actively look for ways to improve systems or processes in my workplace.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "career_q30",
+    "text": "I feel satisfied with the overall direction my career has taken so far.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]

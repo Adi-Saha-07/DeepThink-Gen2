@@ -1,0 +1,122 @@
+[
+  {
+    "id": "eq_q1",
+    "text": "I can usually tell how someone is feeling just by looking at their face or body language.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q2",
+    "text": "When I feel a strong emotion, I can usually name exactly what I'm feeling and why.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q3",
+    "text": "I find it difficult to stay calm when someone criticizes me or disagrees with me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q4",
+    "text": "I actively listen to people without interrupting or planning my response while they talk.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q5",
+    "text": "I can motivate myself to keep working toward a goal, even when I don't feel like it.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q6",
+    "text": "When a friend is upset, I genuinely feel their pain and want to support them.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q7",
+    "text": "I am good at adapting my communication style depending on who I'm talking to.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q8",
+    "text": "I sometimes react impulsively to emotions and later regret what I said or did.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q9",
+    "text": "I can navigate conflicts and disagreements without damaging my relationships.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q10",
+    "text": "I am aware of how my mood affects my behavior and the people around me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q11",
+    "text": "I can calm myself down quickly after feeling anxious or angry.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q12",
+    "text": "I notice when someone is pretending to be okay but is actually struggling.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q13",
+    "text": "I find it easy to encourage and inspire others when they feel down or unmotivated.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q14",
+    "text": "I struggle to express my emotions verbally and often keep them bottled up.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q15",
+    "text": "I remain composed and effective even in high-pressure or emotionally charged situations.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q16",
+    "text": "I take time to reflect on why I reacted to a situation the way I did.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q17",
+    "text": "I can genuinely celebrate other people's success without feeling envious.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q18",
+    "text": "I am able to delay gratification and resist impulsive decisions when it matters.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q19",
+    "text": "I often misread social cues or situations and only realize it later.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "eq_q20",
+    "text": "I am comfortable discussing emotional topics openly with people I trust.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]

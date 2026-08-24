@@ -1,0 +1,182 @@
+[
+  {
+    "id": "social_q1",
+    "text": "I feel energized after spending time in a large group of people.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q2",
+    "text": "I prefer deep one-on-one conversations over big group hangouts.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q3",
+    "text": "I often initiate plans and invite people to do things together.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q4",
+    "text": "After a busy social weekend, I need a full day alone to recharge.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q5",
+    "text": "I find it easy to strike up a conversation with a stranger.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q6",
+    "text": "I tend to think carefully before I speak, rather than blurting out my thoughts.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q7",
+    "text": "I enjoy being the center of attention in a social setting.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q8",
+    "text": "I feel drained when I have to make small talk for extended periods.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q9",
+    "text": "I feel comfortable expressing my opinions openly in group discussions.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q10",
+    "text": "I prefer texting or messaging over phone calls or video chats.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q11",
+    "text": "I feel anxious or self-conscious in social situations I'm unfamiliar with.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q12",
+    "text": "I enjoy attending social events and meeting new people.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q13",
+    "text": "I often replay social interactions in my head afterward and wonder if I said the right things.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q14",
+    "text": "I find it easy to adapt my personality depending on the social context.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q15",
+    "text": "I feel a strong sense of belonging when I'm with my social circle.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q16",
+    "text": "I often feel lonely, even when I'm surrounded by people.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q17",
+    "text": "I am selective about who I let into my inner circle.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q18",
+    "text": "I feel more comfortable observing in social situations than actively participating.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q19",
+    "text": "I maintain strong connections with people across different areas of my life.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q20",
+    "text": "I enjoy playful banter and humor as a way of connecting with others.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q21",
+    "text": "I feel comfortable in silence with someone I'm close to, without the need to fill the space.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q22",
+    "text": "I actively make time to nurture my friendships and relationships.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q23",
+    "text": "I find it difficult to say no to social invitations even when I need rest.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q24",
+    "text": "I feel genuine joy in making other people laugh or smile.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q25",
+    "text": "I can read the energy of a room and adjust my behavior accordingly.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q26",
+    "text": "I often feel misunderstood by others, even when I try to communicate clearly.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q27",
+    "text": "I feel socially confident in professional or formal settings.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q28",
+    "text": "I prefer having one or two very close friends rather than a large group of acquaintances.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q29",
+    "text": "I feel that my social life is an important source of meaning and happiness for me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q30",
+    "text": "I find it easy to reconnect with old friends after a long gap in communication.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]

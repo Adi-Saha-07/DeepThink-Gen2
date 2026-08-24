@@ -1,0 +1,122 @@
+[
+  {
+    "id": "rel_q1",
+    "text": "I find it easy to open up emotionally and be vulnerable with people I'm close to.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q2",
+    "text": "I sometimes worry that the people I care about will leave or lose interest in me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q3",
+    "text": "I value my independence highly and feel uncomfortable when others rely on me too much.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q4",
+    "text": "I trust my close friends and partner to be honest with me, even when it's hard to hear.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q5",
+    "text": "I tend to avoid conflict in my relationships, even if it means not expressing my true feelings.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q6",
+    "text": "I often need reassurance from loved ones that they still care about me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q7",
+    "text": "I feel comfortable depending on others and having others depend on me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q8",
+    "text": "When I'm hurt in a relationship, I tend to pull away rather than talk about it.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q9",
+    "text": "I believe most people have good intentions and won't deliberately hurt me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q10",
+    "text": "I actively work on communicating my needs clearly to the people I'm close to.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q11",
+    "text": "I find it easy to forgive people who have genuinely hurt me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q12",
+    "text": "I feel deeply connected to at least one person in my life.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q13",
+    "text": "I sometimes feel jealous or possessive in close relationships.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q14",
+    "text": "I am comfortable with people having needs and expectations of me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q15",
+    "text": "I prioritize keeping the peace in relationships, even at the cost of my own feelings.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q16",
+    "text": "I feel satisfied with the quality of my close friendships.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q17",
+    "text": "I feel emotionally safe enough in my relationships to be completely myself.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q18",
+    "text": "Past relationship wounds have made it harder for me to trust new people.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q19",
+    "text": "I am good at showing appreciation and gratitude to the people I care about.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "rel_q20",
+    "text": "I find it difficult to maintain long-term friendships or relationships over time.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]

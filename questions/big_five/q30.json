@@ -1,0 +1,182 @@
+[
+  {
+    "id": "bf_q1",
+    "text": "I enjoy trying new foods, visiting unfamiliar places, and exploring new ideas.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q2",
+    "text": "I prefer familiar routines and feel uneasy when things change unexpectedly.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q3",
+    "text": "I keep my living and working spaces organized and follow through on commitments.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q4",
+    "text": "I tend to procrastinate and sometimes leave tasks unfinished.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q5",
+    "text": "I am the kind of person who brings energy and enthusiasm to social gatherings.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q6",
+    "text": "I generally trust people and give them the benefit of the doubt.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q7",
+    "text": "I go out of my way to help others, even if it inconveniences me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q8",
+    "text": "I get stressed or upset easily, even over small things.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q9",
+    "text": "I recover quickly from setbacks and don't dwell on negative emotions for long.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q10",
+    "text": "I appreciate art, music, and creative expression deeply.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q11",
+    "text": "I enjoy philosophical or abstract discussions more than practical, everyday conversations.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q12",
+    "text": "I like to plan my week in detail before it begins.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q13",
+    "text": "I feel uncomfortable when I'm around a lot of people for extended periods.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q14",
+    "text": "I tend to be skeptical of people's motives until they prove themselves trustworthy.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q15",
+    "text": "I have a strong sense of duty and take my responsibilities very seriously.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q16",
+    "text": "I worry about the future more than most people I know.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q17",
+    "text": "I often feel curious about how things work and like to dig deep into topics.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q18",
+    "text": "I find it easy to cheer other people up when they're feeling low.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q19",
+    "text": "I often feel overwhelmed by my own emotions.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q20",
+    "text": "I am comfortable leading a project and delegating tasks to others.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q21",
+    "text": "I enjoy spending time alone and find it restorative.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q22",
+    "text": "I am known among friends and family as someone who is reliable and dependable.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q23",
+    "text": "I can see beauty in everyday things that others might overlook.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q24",
+    "text": "I am easily distracted and struggle to maintain focus on a single task for long.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q25",
+    "text": "I prefer having a small circle of close friends over a wide network of acquaintances.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q26",
+    "text": "I find it natural to empathize with people whose lives are very different from my own.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q27",
+    "text": "I often feel a sense of anxiety or dread without a clear reason.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q28",
+    "text": "I love experimenting with new approaches rather than sticking to proven methods.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q29",
+    "text": "I often put the needs of others before my own.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "bf_q30",
+    "text": "I feel most alive when I am engaged in something creative or imaginative.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]

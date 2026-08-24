@@ -1,0 +1,122 @@
+[
+  {
+    "id": "se_q1",
+    "text": "I generally feel good about who I am and what I have to offer.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q2",
+    "text": "I often compare myself unfavorably to others and feel like I fall short.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q3",
+    "text": "I can accept compliments gracefully without dismissing them or feeling uncomfortable.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q4",
+    "text": "My inner voice is often critical, telling me I'm not good enough or that I'll fail.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q5",
+    "text": "I feel confident taking on new challenges, even when the outcome is uncertain.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q6",
+    "text": "I tend to dwell on my mistakes long after they've happened.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q7",
+    "text": "I feel worthy of love, success, and good things happening to me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q8",
+    "text": "I avoid trying new things because I'm afraid of failing or looking foolish.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q9",
+    "text": "I can set healthy boundaries without feeling guilty about it.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q10",
+    "text": "When I face a setback, I bounce back fairly quickly rather than spiraling into self-doubt.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q11",
+    "text": "I feel proud of the progress I have made in my personal growth.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q12",
+    "text": "I often seek validation or approval from others before making a decision.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q13",
+    "text": "I feel comfortable standing up for myself when I'm treated unfairly.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q14",
+    "text": "I believe my opinions and feelings deserve to be heard and respected.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q15",
+    "text": "I feel at peace with my physical appearance most of the time.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q16",
+    "text": "I often feel like an imposter who will be found out sooner or later.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q17",
+    "text": "I treat myself with the same kindness I would show a good friend.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q18",
+    "text": "I feel secure enough in myself that other people's criticism doesn't define me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q19",
+    "text": "I often feel like I don't quite belong or fit in wherever I am.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "se_q20",
+    "text": "I acknowledge my achievements rather than downplaying or dismissing them.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]

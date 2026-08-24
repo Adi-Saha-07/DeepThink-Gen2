@@ -1,0 +1,122 @@
+[
+  {
+    "id": "social_q1",
+    "text": "I feel energized after spending time in a large group of people.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q2",
+    "text": "I prefer deep one-on-one conversations over big group hangouts.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q3",
+    "text": "I often initiate plans and invite people to do things together.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q4",
+    "text": "After a busy social weekend, I need a full day alone to recharge.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q5",
+    "text": "I find it easy to strike up a conversation with a stranger.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q6",
+    "text": "I tend to think carefully before I speak, rather than blurting out my thoughts.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q7",
+    "text": "I enjoy being the center of attention in a social setting.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q8",
+    "text": "I feel drained when I have to make small talk for extended periods.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q9",
+    "text": "I feel comfortable expressing my opinions openly in group discussions.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q10",
+    "text": "I prefer texting or messaging over phone calls or video chats.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q11",
+    "text": "I feel anxious or self-conscious in social situations I'm unfamiliar with.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q12",
+    "text": "I enjoy attending social events and meeting new people.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q13",
+    "text": "I often replay social interactions in my head afterward and wonder if I said the right things.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q14",
+    "text": "I find it easy to adapt my personality depending on the social context.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q15",
+    "text": "I feel a strong sense of belonging when I'm with my social circle.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q16",
+    "text": "I often feel lonely, even when I'm surrounded by people.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q17",
+    "text": "I am selective about who I let into my inner circle.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q18",
+    "text": "I feel more comfortable observing in social situations than actively participating.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q19",
+    "text": "I maintain strong connections with people across different areas of my life.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "social_q20",
+    "text": "I enjoy playful banter and humor as a way of connecting with others.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]

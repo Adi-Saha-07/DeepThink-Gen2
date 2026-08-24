@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sb_q1",
+    "text": "I often feel like there aren't enough hours in the day to get everything done.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q2",
+    "text": "I find it difficult to fully disconnect from work or responsibilities during my free time.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q3",
+    "text": "I have healthy ways of dealing with stress, such as exercise, hobbies, or talking to someone.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q4",
+    "text": "I sometimes feel emotionally exhausted even after doing tasks that aren't physically demanding.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q5",
+    "text": "I feel a sense of accomplishment and purpose from my daily work or studies.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q6",
+    "text": "I have been feeling more cynical or detached from things I used to care about.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q7",
+    "text": "Physical symptoms like headaches, muscle tension, or stomach problems show up when I'm stressed.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q8",
+    "text": "I feel comfortable saying 'no' to extra responsibilities when my plate is already full.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q9",
+    "text": "I regularly take breaks and make time for activities that bring me joy.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q10",
+    "text": "I have been sleeping poorly or irregularly due to stress or overthinking.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q11",
+    "text": "I feel like I'm always rushing from one task to the next without a moment to breathe.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q12",
+    "text": "I find it hard to ask for help even when I'm clearly overwhelmed.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q13",
+    "text": "I feel that my personal life has suffered as a result of my workload or responsibilities.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q14",
+    "text": "I feel motivated and excited to start my day most mornings.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q15",
+    "text": "I have noticed I'm becoming more forgetful or making more mistakes when under pressure.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q16",
+    "text": "I feel resentful or bitter about the amount of demands placed on me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q17",
+    "text": "I am good at identifying what triggers my stress and managing those situations.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q18",
+    "text": "I feel like I'm working hard but not actually making meaningful progress.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q19",
+    "text": "I take care of my basic physical needs — sleep, food, movement — even during stressful periods.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "sb_q20",
+    "text": "I feel that my current pace of life is sustainable in the long run.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]

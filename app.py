@@ -95,7 +95,9 @@ def select_types():
                 categories=Config.CATEGORIES,
                 error="Please select one category.",
             )
+        question_count = int(request.form.get("question_count", 10))
         save_selected_types(session, [selected])
+        session["question_count"] = question_count
         session.modified = True
         return redirect(url_for("test"))
     return render_template("select_types.html", categories=Config.CATEGORIES)
@@ -119,9 +121,10 @@ def api_questions():
     if not selected:
         return jsonify({"error": "No categories selected"}), 400
 
+    question_count = session.get("question_count", 10)
     question_sets = []
     for cat in selected:
-        questions = load_questions(cat)
+        questions = load_questions(cat, question_count)
         cat_info = Config.CATEGORIES.get(cat, {})
         question_sets.append(
             {
@@ -161,9 +164,10 @@ def api_submit():
     selected_types = session_data["selected_types"]
     demographics = session_data["demographics"]
 
+    question_count = session.get("question_count", 10)
     questions_map = {}
     for cat in selected_types:
-        questions = load_questions(cat)
+        questions = load_questions(cat, question_count)
         for q in questions:
             questions_map[q["id"]] = q["text"]
 

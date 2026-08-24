@@ -1,0 +1,122 @@
+[
+  {
+    "id": "mh_q1",
+    "text": "Over the past two weeks, I have generally felt interested and engaged in my daily activities.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q2",
+    "text": "I have been feeling down, heavy, or persistently sad more often than not recently.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q3",
+    "text": "I find it difficult to fall asleep, stay asleep, or I sleep far more than usual.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q4",
+    "text": "I often feel restless, on edge, or unable to relax even when there's no clear reason.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q5",
+    "text": "My energy levels have felt consistently low, making everyday tasks feel harder than they should.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q6",
+    "text": "I have been worrying excessively about multiple things and find it hard to stop.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q7",
+    "text": "I have trouble concentrating on tasks, reading, or watching things I normally enjoy.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q8",
+    "text": "I have been feeling generally hopeful about the future.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q9",
+    "text": "I tend to withdraw from friends and family when I'm going through a tough time.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q10",
+    "text": "Overall, I feel emotionally balanced and able to handle what life throws at me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q11",
+    "text": "I have noticed a significant change in my appetite — eating much more or much less than usual.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q12",
+    "text": "I have been experiencing sudden feelings of panic or overwhelming fear out of nowhere.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q13",
+    "text": "I feel like a burden to the people around me.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q14",
+    "text": "I have moments where I feel numb or detached from myself and my surroundings.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q15",
+    "text": "I have a strong support system of people I can reach out to when I need help.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q16",
+    "text": "I have been using alcohol, food, or screens to cope with difficult emotions.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q17",
+    "text": "I engage in self-care practices like exercise, journaling, or meditation regularly.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q18",
+    "text": "I have felt irritable or short-tempered with people I normally get along with.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q19",
+    "text": "I find joy and pleasure in activities that I used to love.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  },
+  {
+    "id": "mh_q20",
+    "text": "I feel comfortable seeking professional support (e.g. therapy) when I'm struggling.",
+    "type": "likert_5",
+    "options": ["Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"]
+  }
+]
